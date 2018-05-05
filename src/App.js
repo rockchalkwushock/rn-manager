@@ -3,7 +3,7 @@ import { View } from 'react-native'
 import { Provider } from 'react-redux'
 import firebase from 'firebase'
 
-import { Header } from './components'
+import { Form, Header } from './components'
 import { config, store } from './data'
 
 class App extends Component {
@@ -16,6 +16,7 @@ class App extends Component {
       <Provider store={store}>
         <View style={{ flex: 1 }}>
           <Header text="Manager" />
+          <Form />
         </View>
       </Provider>
     )
