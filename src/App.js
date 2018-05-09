@@ -3,8 +3,8 @@ import { View } from 'react-native'
 import { Provider } from 'react-redux'
 import firebase from 'firebase'
 
-import { Form, Header } from './components'
 import { config, store } from './data'
+import AppRouter from './Router'
 
 class App extends Component {
   state = {}
@@ -15,8 +15,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <View style={{ flex: 1 }}>
-          <Header text="Manager" />
-          <Form />
+          <AppRouter />
         </View>
       </Provider>
     )

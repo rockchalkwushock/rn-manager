@@ -1,7 +1,9 @@
 import React from 'react'
 import { View } from 'react-native'
 
-const Section = props => <View style={styles.root.view}>{props.children}</View>
+const Section = props => (
+  <View style={[styles.root.view, props.style]}>{props.children}</View>
+)
 
 const styles = {
   root: {
